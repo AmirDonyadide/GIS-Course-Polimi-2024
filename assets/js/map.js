@@ -237,22 +237,3 @@ var bingAerial = new Tile({
     })
 });
 basemapLayers.getLayers().extend([bingRoads, bingAerial]);
-
-//Add the Stadia Maps layers
-var stadiaWatercolor = new Tile({
-    title: "Stadia Watercolor",
-    type: "base",
-    visible: false,
-    source: new StadiaMaps({
-        layer: 'stamen_watercolor'
-    })
-})
-var stadiaToner = new Tile({
-    title: "Stadia Toner",
-    type: "base",
-    visible: false,
-    source: new StadiaMaps({
-        layer: 'stamen_toner'
-    })
-})
-basemapLayers.getLayers().extend([stadiaWatercolor, stadiaToner]);
