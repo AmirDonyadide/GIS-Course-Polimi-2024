@@ -1,0 +1,536 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>GIS LAB 2024</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Header -->
+					<header id="header">
+						<div class="content">
+							<div class="inner">							
+								<h1>Landslide Susceptibility Mapping and Exposure Assessment</h1>
+								<h2>Politecnico di Milano</h2>
+								<h3>Geographic Information Systems <br> 2023-2024</h3>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">Intro</a></li>
+								<li><a href="#about">About</a></li>
+								<li><a href="#work">Work</a></li>
+								<li><a href="#result">Result</a></li>
+								<li><a href="#validation">Validation</a></li>
+								<li><a href="#webgis">WebGIS</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major">Introduction</h2>
+								<p>Welcome to the project on Landslide Susceptibility Mapping and Exposure Assessment, part of the Master of Science in Geoinformatics at Politecnico di Milano. This project focuses on assessing and visualizing the risk of landslides in a specific region using a combination of advanced geospatial technologies and data analysis techniques.</p>
+								<hr />
+								<h2>What is a Landslide?</h2>
+								<p>A landslide is the movement of rock, earth, or debris down a slope due to gravity. Landslides can be triggered by various factors including heavy rainfall, earthquakes, volcanic activity, or human activities such as construction. They pose significant risks to life, property, and the environment, making it crucial to identify and monitor susceptible areas.</p>
+								<span class="image main"><img src="images/pic01.png" alt="" /></span>
+								<hr />
+								<h2>Role of GIS and Remote Sensing</h2>
+								<p>Geographic Information Systems (GIS) and remote sensing technologies are essential tools in landslide susceptibility mapping. GIS allows for the integration, analysis, and visualization of various geospatial data layers, helping to identify patterns and relationships. Remote sensing involves the acquisition of information about the Earth's surface from satellite or aerial sensors, providing critical data for monitoring and analysis.</p>
+								<span class="image main"><img src="images/pic012.png" alt="" /></span>
+								<p>In this project, we have utilized GIS and remote sensing to integrate various datasets such as Digital Terrain Model (DTM), land use data (DUSAF), river and road buffers, landslide inventory maps, and Normalized Difference Vegetation Index (NDVI). These datasets help in understanding the terrain, land cover, proximity to water bodies and infrastructure, historical landslide events, and vegetation health, respectively.</p>
+								<hr />
+								<h2>Importance of Monitoring and Predicting Landslides</h2>
+								<p>Monitoring and predicting landslides is crucial for disaster risk reduction. By identifying areas that are susceptible to landslides, authorities can implement preventive measures, plan land use more effectively, and respond promptly to potential landslide events. Evaluating the exposure of populations in these areas helps in prioritizing resources and efforts for evacuation and emergency response, thereby minimizing the impact on communities.</p>
+								<p>Through this project, we aim to identify areas susceptible to landslides and evaluate the exposure of the population within these areas. By integrating various datasets and utilizing advanced geospatial analysis techniques, we have generated a comprehensive landslide susceptibility map.</p>
+								<p>The final output includes a WebGIS application that provides an interactive platform for exploring the susceptibility map and related data layers. This tool not only aids in understanding the spatial distribution of landslide risk but also serves as a valuable resource for decision-makers in land use planning and disaster management.</p>
+								<span class="image main"><img src="images/pic013.jpg" alt="" /></span>
+							</article>
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">About</h2>
+								<p>This project is part of the Master of Science in Geoinformatics at Politecnico di Milano. The MSc in Geoinformatics program at Polimi aims to equip students with advanced skills in geographic information systems, remote sensing, and spatial data analysis. The program emphasizes the application of geoinformatics in various fields such as environmental monitoring, urban planning, and disaster management.</p>
+								<hr />
+								<span class="image main"><img src="images/pic021.png" alt="" /></span>
+								<h2>Politecnico di Milano</h2>
+								<p>Politecnico di Milano, founded in 1863, is one of the leading technical universities in Europe. The university is known for its high-quality education and research in engineering, architecture, and design. The Department of Civil and Environmental Engineering (DICA) at Polimi is dedicated to advancing knowledge and technologies in civil and environmental engineering through innovative research and teaching.</p>
+								<hr />
+								<h2>GIS Course</h2>
+								<p>The Geographic Information Systems course for the academic year 2023-2024 covers various aspects of GIS and remote sensing technologies. The course includes practical projects such as landslide susceptibility mapping and population exposure assessment, providing hands-on experience in geospatial analysis and visualization.</p>
+								<hr />
+								<h2>Course Instructors</h2>
+								<ul>
+									<li>Prof. Maria Antonia Brovelli: <a href="mailto:maria.brovelli@polimi.it"> maria.brovelli@polimi.it</a></li>
+									<li>Dr. Vasil Yordanov: <a href="mailto:vasil.yordanov@polimi.it"> vasil.yordanov@polimi.it</a></li>
+									<li>Dr. Juan Pablo Duque: <a href="mailto:juanpablo.duque@polimi.it"> juanpablo.duque@polimi.it</a></li>
+									<li>Dr. Lorenzo Amici: <a href="mailto:lorenzo.amici@polimi.it"> lorenzo.amici@polimi.it</a></li>
+								</ul>
+								<hr />
+								<h2>Project Team Members</h2>
+								<br>
+								<div class="image-gallery3">
+									<div class="image-column3">
+										<span class="image"><img src="images/amirhossein.png" alt="Amir Hossein Donyadidegan" /></span>
+										<h3>Amir Hossein<br>Donyadidegan</h3>
+										<p><a href="https://www.linkedin.com/in/amirhossein-donyadidegan-790a811b7/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=ir">LinkedIn Profile</a></p>
+									</div>
+									<div class="image-column3">
+										<span class="image"><img src="images/firoozeh.png" alt="Firoozeh Rahimian" /></span>
+										<h3>Firoozeh<br>Rahimian</h3>
+										<p><a href="https://www.linkedin.com/in/firoozeh-rahimian">LinkedIn Profile</a></p>
+									</div>
+									<div class="image-column3">
+										<span class="image"><img src="images/hadi.png" alt="Hadi Kheiri" /></span>
+										<h3>Hadi<br>Kheiri</h3>
+										<p><a href="https://www.linkedin.com/in/hadi-kheiri">LinkedIn Profile</a></p>
+									</div>
+								</div>
+							</article>
+						
+							<!-- Workflow -->
+							<article id="work">
+								<h1 class="major">Workflow</h1>
+								<p>This section outlines the comprehensive workflow for the Landslide Susceptibility Mapping and Exposure Assessment project. The workflow is divided into six main steps, each crucial for the successful completion of the project.</p>
+								<hr />
+								<ol>
+									<li><h2>Data Collection</h2>
+										<br>
+										<div class="image-gallery">
+											<div class="image-column">
+												<span class="image"><img src="images/DTM_input.png" alt="DTM Input" /></span>
+												<h3>DTM</h3>
+												<p>Obtain Digital Terrain Model data for the study area to analyze elevation and slope factors.</p>
+											</div>
+											<div class="image-column">
+												<span class="image"><img src="images/DUSAF_input.png" alt="DUSAF Input" /></span>
+												<h3>DUSAF</h3>
+												<p>Collect land use data from DUSAF to understand land cover and use patterns.</p>
+											</div>
+											<div class="image-column">
+												<span class="image"><img src="images/NDVI_input.png" alt="NDVI Input" /></span>
+												<h3>NDVI</h3>
+												<p>Obtain Normalized Difference Vegetation Index data to analyze vegetation cover and health.</p>
+											</div>
+											<div class="image-column">
+												<span class="image"><img src="images/river_buffer_input.png" alt="River Buffer Input" /></span>
+												<h3>River buffer</h3>
+												<p>Obtain river buffer data to account for proximity to water bodies.</p>
+											</div>
+											<div class="image-column">
+												<span class="image"><img src="images/road_buffer_input.png" alt="Road Buffer Input" /></span>
+												<h3>Road buffer</h3>
+												<p>Represents land use patterns crucial for analyzing land cover impacts on landslides.</p>
+											</div>
+											<div class="image-column">
+												<span class="image"><img src="images/LSI_input.png" alt="Landslide Inventory Input" /></span>
+												<h3>Landslide Inventory</h3>
+												<p>Acquire historical landslide data to train and validate the susceptibility model.</p>
+											</div>
+										</div>
+									</li>
+									<hr />
+									<li><h2>Data Preprocessing</h2>
+										<ul>
+											<li><h3>Reproject Datasets to a Common CRS</h3></li>
+											<p>Ensure all datasets are in the same CRS to avoid misalignments. All layers were reprojected to the CRS WGS84, which is commonly used for global datasets.</p>
+											
+											<li><h3>Clip Datasets to the Study Area</h3></li>
+											<p>Focus the analysis on the specific study area by clipping all vector and raster datasets accordingly. This ensures that only relevant data within the study area is used for further analysis.</p>
+										
+											<li><h3>Rasterize Vector Datasets</h3></li>
+											<p>Convert all vector data to raster format to ensure uniform data structure for analysis. This step is essential for integrating vector data such as river and road buffers into the susceptibility analysis.</p>
+										
+											<li><h3>Generate Additional Derived Layers</h3></li>
+											<p>To enhance the terrain analysis, create additional layers from the Digital Terrain Model (DTM) data, such as slope, aspect, and curvature. These derived layers are essential for understanding terrain characteristics, which significantly impact landslide susceptibility analysis.<br>Next, generate a "No Landslide Zone" from the slope layer. Additionally, create training and testing points from both the Landslide Inventory and No Landslide Zone layers.</p>
+											
+										</ul>
+									
+										<div class="image-gallery">
+											<div class="image-column">
+												<span class="image"><img src="images/dtm_level2.png" alt="DTM Layer after Preprocessing" /></span>
+												<h3>DTM</h3>
+												<p>Shows the elevation data used to derive slope and other terrain attributes.</p>
+											</div>
+											<div class="image-column">
+												<span class="image"><img src="images/dusaf_level2.png" alt="DUSAF Layer after Preprocessing" /></span>
+												<h3>DUSAF</h3>
+												<p>Represents land use data used for analyzing land cover patterns and their impact on landslides.</p>
+											</div>
+											<div class="image-column">
+												<span class="image"><img src="images/ndvi_level2.png" alt="NDVI Layer after Preprocessing" /></span>
+												<h3>NDVI</h3>
+												<p>Indicates vegetation cover and health, important for assessing areas prone to erosion.</p>
+											</div>
+											<div class="image-column">
+												<span class="image"><img src="images/river_buffer_level2.png" alt="River Buffer after Preprocessing" /></span>
+												<h3>River Buffer</h3>
+												<p>Shows areas influenced by proximity to rivers, which can increase landslide susceptibility.</p>
+											</div>
+											<div class="image-column">
+												<span class="image"><img src="images/road_buffer_level2.png" alt="Road Buffer after Preprocessing" /></span>
+												<h3>Road Buffer</h3>
+												<p>Represents areas near roads, which can impact soil stability and erosion processes.</p>
+											</div>
+											<div class="image-column">
+												<span class="image"><img src="images/faults_buffer_level2.png" alt="Faults Buffer" /></span>
+												<h3>Faults buffer</h3>
+												<p>Represents areas near geological faults, which can increase landslide risk by weakening the ground and making slopes less stable.</p>
+											</div>
+											<div class="image-column">
+												<span class="image"><img src="images/aspect.png" alt="Aspect Layer after Preprocessing" /></span>
+												<h3>Aspect</h3>
+												<p>Shows the orientation of the terrain, which influences solar radiation and soil moisture.</p>
+											</div>
+											<div class="image-column">
+												<span class="image"><img src="images/slope.png" alt="Slope Layer after Preprocessing" /></span>
+												<h3>Slope</h3>
+												<p>Illustrates the steepness of the terrain, a key factor in landslide susceptibility.</p>
+											</div>
+											<div class="image-column">
+												<span class="image"><img src="images/plan.png" alt="Plan Curvature Layer after Preprocessing" /></span>
+												<h3>Plan Curvature</h3>
+												<p>Shows the curvature of the terrain in plan view, affecting water flow and erosion.</p>
+											</div>
+											<div class="image-column">
+												<span class="image"><img src="images/profile.png" alt="Profile Curvature Layer after Preprocessing" /></span>
+												<h3>Profile Curvature</h3>
+												<p>Indicates the curvature of the terrain in profile view, influencing erosion and sediment transport.</p>
+											</div>
+										</div>
+									</li>
+									<hr />
+									<li><h2>Susceptibility Map Generation</h2>
+										<ul>
+											<li><h3>Combine Environmental Factors</h3></li>
+											<p>To simplify the process of classification, combine all environmental factors (DTM, DUSAF, NDVI, RIVER, ROAD, ASPECT, SLOPE, PLAN, PROFILE, and FAULTS) into a single virtual raster layer.</p>
+											<li><h3>GENERATE CLASSIFICATION MAP</h3></li>
+											<p>Use the Dzetsaka Plugin in QGIS for running the Random Forest classifier.<br>Input the generated virtual raster layer and Training Sampled Points (in shapefile format) into Dzetsaka plugin, selecting the appropriate attribute for generating classification map.</p>
+											<li><h3>GENERATE CONFIDENCE MAP</h3></li>
+											<p>The confidence map shows the classification confidence level.</p>
+											<li><h3>GENERATE THE SUSCEPTIBILITY(PROBABILITY) MAP</h3></li>
+											<p>The generated classification map shows whether the landslide occurs or not (no landslide zones= 1, landslide zones=2), but to generate susceptibility map we want the probability of landslide classes ranges from 0 to 100. <br>Run the raster calculator to generate the landslide susceptibility map by defining the proper condition and saving the output as a raster file.</p>
+										</ul>
+										<div class="image-gallery">
+											<div class="image-column">
+												<span class="image"><img src="images/training_points.png" alt="Training Points" /></span>
+												<h3>Training Points</h3>
+												<p>Randomly selected points used for training the classification model.</p>
+											</div>
+											<div class="image-column">
+												<span class="image"><img src="images/classified.png" alt="Classified Map" /></span>
+												<h3>Classification</h3>
+												<p>Resulting classification map showing the Binary susceptibility levels.</p>
+											</div>
+											<div class="image-column">
+												<span class="image"><img src="images/confidence.png" alt="Confidence Map" /></span>
+												<h3>Confidence Map</h3>
+												<p>Map showing the confidence levels of the classification model.</p>
+											</div>
+											<div class="image-column">
+												<p>In this part, we find some random training points. Then we make completely full attribute tables for points with all the details from previous raster files. We use these points and tables for the classification with tools in QGIS, producing both a confidence map and a susceptibility map.</p>
+											</div>
+										</div>
+									</li>
+									<hr />
+									<li><h2>Exposure Assessment</h2>
+										<ul>
+											<li><h3>DATA PREPROCESSING</h3></li>
+											<li><h4>population data</h4></li>
+											<p>Reproject and clip population raster data set to match the study area.</p>
+											<li><h4>susceptibility map</h4></li>
+											<p>Reclassify the susceptibility map into low, moderate, high, and very high classes using QGIS Raster Calculator and Resample the reclassified susceptibility map to match the population raster’s resolution.</p>
+										</ul>
+										<div class="image-gallery">
+											<div class="image-column">
+												<span class="image"><img src="images/population.png" alt="Population" /></span>
+												<h3>Population<br>Data</h3>
+												<p>Reprojected and clipped population raster data set.</p>
+											</div>
+											<div class="image-column">
+												<span class="image"><img src="images/susceptibility_reclass.png" alt="Reclassified Map" /></span>
+												<h3>Reclassified Susceptibility Map</h3>
+												<p>Map showing susceptibility classes after reclassification.</p>
+											</div>
+										</div>
+										<ul>
+											<li><h3>EXPOSURE ASSESSMENT</h3></li>
+											<li><h4>COMPUTATION</h4></li>
+											<p>Calculate population counts in each susceptibility class using QGIS Zonal Statistics tool and generate its table.</p>
+											<li><h4>visualizations</h4></li>
+											<p>Plot (e.g. with a pie chart) the percentage of population per each susceptibility class.</p>
+										</ul>
+									</li>
+								</ol>
+							</article>
+
+						<!-- Result -->
+							<article id="result">
+								<h2 class="major">Results</h2>
+								
+								<section>
+									<h2>Landslide Susceptibility Mapping</h2>
+									<p>The results are presented in the following map:</p>
+									<p>The susceptibility map highlights high-risk areas in red, while lower-risk areas are indicated in green. This visual representation aids in identifying zones that require immediate attention and preventive measures.</p>
+									<div class="image-column">
+										<span class="image"><img src="images/landslide_susceptibility_result.png" alt="Susceptibility Map" /></span>
+										<h3>Susceptibility Map</h3>
+									</div>
+								</section>
+								<hr />
+								<section>
+									<h2>Population Exposure Assessment</h2>
+									<p>The population exposure assessment involved overlaying the landslide susceptibility map with population distribution data. This analysis was conducted to quantify the percentage of people at risk in each susceptibility class.</p>
+									<div class="image-gallery">
+										<div class="image-column">
+											<span class="image"><img src="images/piechart_area.png" alt="Pie Chart of Population Exposure" /></span>
+											<h3>Area</h3>
+											<p>Illustrates the proportion of the area in each susceptibility class.</p>
+										</div>
+										<div class="image-column">
+											<span class="image"><img src="images/piechart_population.png" alt="Pie Chart of Population Exposure" /></span>
+											<h3>Population</h3>
+											<p>shows the percentage of people living in each zone.</p>
+										</div>
+									</div>
+									<ul>
+										<li>Zone 1 (Blue - Low Risk)</li>
+										<li>Zone 2 (Green - Medium Low Risk)</li>
+										<li>Zone 3 (Yellow - Medium High Risk)</li>
+										<li>Zone 4 (Red - High Risk)</li>
+									</ul>
+									<p>The charts reveal that although the high-risk areas cover a significant portion of the region, the population residing in these areas is relatively low. This emphasizes the need for targeted mitigation strategies and emergency preparedness plans focused on those high-risk areas.</p>
+								</section>
+								<hr />
+								<section>
+									<h2>Critical Discussion of Numerical Outcomes</h2>
+									<p>The numerical outcomes from our analysis reveal varying levels of landslide susceptibility across different zones. Notably:</p>
+									<ul>
+										<li><h3>Zone 1 (Blue - Low Risk)</h3>
+										<p>Covers 12,008,953.03 m² with a mean population exposure of 1.5316 people per unit area, indicating lower risk and moderate population density.</p></li>
+										<li><h3>Zone 2 (Green - Medium Low Risk)</h3>
+										<p>Covers 10,427,195.27 m² and has the highest mean population exposure (4.7756 people per unit area), highlighting a higher population density in medium-risk areas.</p></li>
+										<li><h3>Zone 3 (Yellow - Medium High Risk)</h3>
+										<p>Covers 1,867,094.454 m² with a mean population exposure of 1.0469 people per unit area, indicating moderate risk and moderate population density.</p></li>
+										<li><h3>Zone 4 (Red - High Risk)</h3>
+										<p>Despite covering the largest area (31,666,170.06 m²), it has the lowest mean population exposure (0.1248 people per unit area). This suggests that while a significant portion of the land is high-risk, fewer people live there.</p></li>
+									</ul>
+									<p>The analysis shows that while Zone 4 has a significant area marked as high risk, the population density in this zone is relatively low. Conversely, Zone 2, though medium risk, has a higher population density, which suggests that mitigation efforts should focus not only on high-risk areas but also on zones with higher population densities to reduce overall risk.</p>
+								</section>
+								<hr />
+								<section>
+									<h2>Conclusion</h2>
+									<p>The results of this project underscore the efficacy of using geospatial techniques for landslide susceptibility mapping and population exposure assessment. These findings provide a foundational tool for decision-makers to implement effective land use planning and disaster mitigation strategies. By understanding the distribution of both risk and population, authorities can better allocate resources and design interventions that target the most vulnerable areas.</p>
+								</section>
+								
+							</article>
+					
+						<!-- Validation -->
+							<article id="validation">
+								<h2 class="major">Validation</h2>
+								<section>
+										<h3>Validate the susceptibility map using accuracy assessment and sampling</h3>
+										<p>Use a Python script for accuracy assessment, comparing predicted susceptibility with actual landslide occurrences to generate an error matrix for validation results and producing an error matrix to quantify the accuracy of the susceptibility map.</p>
+										<pre><code>from qgis.core import QgsProcessing
+from qgis.core import QgsProcessingAlgorithm
+from qgis.core import QgsProcessingMultiStepFeedback
+from qgis.core import QgsProcessingParameterFileDestination
+from qgis.core import QgsProcessingParameterFile
+from qgis.core import QgsProcessingParameterVectorLayer
+from qgis.core import QgsProcessingParameterRasterLayer
+from qgis.core import QgsProcessingParameterField
+from qgis.core import QgsProcessingParameterString
+from qgis.core import QgsVectorLayer
+from qgis.core import QgsProcessingParameterFeatureSink
+from qgis.core import QgsProject
+from qgis.core import QgsFeatureSink
+import processing
+import numpy as np
+import random
+import string
+import os
+import pandas as pd
+class Accuracy_assessment_and_sampling(QgsProcessingAlgorithm):        
+def initAlgorithm(self, config=None):
+	self.addParameter(QgsProcessingParameterVectorLayer('vectorwithclassificationandreference', 'Vector with reference data', types=[QgsProcessing.TypeVector], defaultValue=None))
+	#self.addParameter(QgsProcessingParameterVectorLayer('vectorwithclassificationandreference', 'Vector with classification', types=[QgsProcessing.TypeVector], defaultValue='C:/Users/Gorica/Documents/Teaching_2020_2021/Lab/Sampling points/stratified_random_sampling1_classified.gpkg'))
+	self.addParameter(QgsProcessingParameterField('reference', 'Reference data column', type=QgsProcessingParameterField.Numeric, parentLayerParameterName='vectorwithclassificationandreference', allowMultiple=False, defaultValue=None))
+	self.addParameter(QgsProcessingParameterString('Newfieldname', 'Name of new field for raster values', multiLine=False, defaultValue='Thematic_class'))
+	self.addParameter(QgsProcessingParameterRasterLayer('raster', 'Raster to be sampled', defaultValue=None))
+	self.addParameter(QgsProcessingParameterFileDestination('Outputfolder', 'Error matrix output path', fileFilter='CSV Files (*.csv)', defaultValue=None))
+	self.addParameter(QgsProcessingParameterFeatureSink('Sampled', 'Sampled', type=QgsProcessing.TypeVectorAnyGeometry, createByDefault=True))#, defaultValue=None))
+	#self.addParameter(QgsProcessingParameterVectorDestination('Sampled', 'Sampled', type=QgsProcessing.TypeVectorPoint, defaultValue=None, optional=True))
+	
+def processAlgorithm(self, parameters, context, model_feedback):
+	# Use a multi-step feedback, so that individual child algorithm progress reports are adjusted for the
+	# overall progress through the model
+	feedback = QgsProcessingMultiStepFeedback(1, model_feedback)
+	results = {}
+	outputs = {}
+
+	#reference=parameters['reference']
+	#classification=parameters['Newfieldname'] 
+	#output_folder=parameters['Outputfolder']
+	
+	# Sample raster values
+	alg_params = {
+		'COLUMN_PREFIX': parameters['Newfieldname'],
+		'INPUT': parameters['vectorwithclassificationandreference'],
+		'RASTERCOPY': parameters['raster'],
+		'OUTPUT': parameters['Sampled']
+	}
+
+	SampleRasterValues= processing.run('qgis:rastersampling', alg_params, context=context, feedback=feedback, is_child_algorithm=True)
+	
+
+	vlayer = QgsVectorLayer(SampleRasterValues['OUTPUT'])
+
+	
+	idx_1 = vlayer.fields().indexFromName(parameters['reference'])
+	idx_2 = vlayer.fields().indexFromName(parameters['Newfieldname'])
+	
+
+	list_class = []
+	list_ref = []
+	
+	features =  vlayer.getFeatures()
+	
+	for ft in features:
+		if ft.attributes()[idx_2]!=None and ft.attributes()[idx_1]!=None:
+			list_class.append(ft.attributes()[idx_2])
+			list_ref.append(ft.attributes()[idx_1])
+
+	feedback.pushInfo(str(idx_2))
+	error_matrix1=pd.crosstab(pd.Series(list_class, name=parameters['Newfieldname']),pd.Series(list_ref, name=parameters['reference']), dropna=False)
+
+	cls_cat=error_matrix1.index.values
+	
+	#extract all columns values (classes of existing dataset)
+	ref_cat=error_matrix1.columns.values
+	#make union of index and column values
+	cats=(list(set(ref_cat) | set(cls_cat)))
+	#reindex error matrix so that it has missing columns and fill the emtpy cells with 0.00000001
+	error_matrix=error_matrix1.reindex(index=cats, columns=cats, fill_value=0.00000001)
+	error_matrix.index.name=error_matrix.index.name+"/"+error_matrix.columns.name
+	
+	# OUTPUT 		
+	diag_elem=np.diagonal(np.matrix(error_matrix))
+	UA=(diag_elem/error_matrix.sum(axis=1))*(diag_elem>0.01)
+	PA=diag_elem/error_matrix.sum(axis=0)*(diag_elem>0.01)
+	OA=sum(diag_elem)/error_matrix.sum(axis=1).sum()
+	error_matrix['UA']=UA.round(2)
+	error_matrix['PA']=PA.round(2)
+	error_matrix['OA']=np.nan
+	error_matrix.loc[error_matrix.index[0],'OA']=OA
+
+	error_matrix.to_csv(parameters['Outputfolder'])
+	feedback.pushConsoleInfo('Error matrix saved in '+parameters['Outputfolder'])
+	return results
+
+def name(self):
+	return 'Accuracy_assessment_and_sampling'
+
+def displayName(self):
+	return 'Accuracy assessment and sampling'
+
+def group(self):
+	return 'raster'
+
+def groupId(self):
+	return ''
+def createInstance(self):
+	return Accuracy_assessment_and_sampling()
+</code>
+											</pre>
+											<h3>Algorithm Description</h3>
+											<p>This algorithm takes sample points with reference classes and sample raster in the same location of sample points. Then it estimates error matrix and accuracy indexes by cross tabulating field with reference classes and field with classification classes.</p>
+											<h4>Input Parameters</h4>
+											<ul>
+											<li>Vector with Reference Data: Vector of sampling points which are already classified (i.e. reference point data).</li>
+											<li>Raster to be Sampled: Raster is the thematic map for which accuracy is being estimated. This raster will be sampled in the location of sampling points.</li>
+											<li>Reference Data Column: Name of the column in which sampled raster values will be stored.</li>
+											</ul>
+											<h4>Outputs</h4>
+											<ul>
+											<li>Error Matrix Output Path: Mandatory!!! Path and name of the output file with error matrix and accuracy indexes. Accuracy indexes estimated are Overall accuracy, User's accuracy, and Producer's accuracy.</li>
+											<li>Sampled: Mandatory!!! Path and name of the output vector file that contains all the data as "Vector with reference data" plus the new column with values sampled from raster.</li>
+										</ul>
+										<p>Algorithm Author: Gorica Bratic<br>Algorithm Version: 1.0</p>
+											
+										<div class="image-gallery">
+											<div class="image-column">
+												<span class="image"><img src="images/testing_points.png" alt="Testing Points" /></span>
+												<h3>Testing Points</h3>
+											</div>
+											<div class="image-column">
+												<span class="image"><img src="images/classified.png" alt="Classified Map" /></span>
+												<h3>Classification</h3>
+											</div>
+										</div>
+										<hr />
+										<h2>Error Matrix and Validation</h2>
+										<p>To validate the accuracy of our susceptibility map, we computed an Error Matrix using a subset of known landslide locations. The following table presents the computed matrix:</p>								
+										<div class="table-wrapper">
+											<table class="alt">
+												<thead>
+													<tr>
+														<th>Predicted/Actual</th>
+														<th>No Landslide</th>
+														<th>Landslide</th>
+														<th>UA</th>
+														<th>PA</th>
+														<th>OA</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>No Landslide</td>
+														<td>120</td>
+														<td>77</td>
+														<td>0.61</td>
+														<td>0.80</td>
+														<td>0.69</td>
+													</tr>
+													<tr>
+														<td>Landslide</td>
+														<td>30</td>
+														<td>118</td>
+														<td>0.80</td>
+														<td>0.61</td>
+														<td></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+								</section>
+							</article>
+
+						<!-- WebGIS -->
+							<article id="webgis">
+								<h2 class="major">WebGIS</h2>
+								<p>Explore the interactive WebGIS application developed to allows users to interact with the data layers, toggle between different views, and gain insights into the spatial distribution of landslide risk and population exposure. This tool serves as a valuable resource for stakeholders, researchers, and policymakers involved in disaster risk management and urban planning.</p>
+								<a href="pages/webgis.html" class="button">Go to WebGIS</a>
+							</article>
+					</div>
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
