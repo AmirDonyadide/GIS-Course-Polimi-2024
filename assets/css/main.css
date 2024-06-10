@@ -383,11 +383,23 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
+image.main5 {
+			display: block;
+			margin: auto;
+			width: 100%;
+			text-align: center;
+		}
 
+			.image.main5 img {
+				width: 50%;
+				margin: auto;
+				text-align: center;
+			}
 		@media screen and (max-width: 736px) {
 
 			.image.main {
 				margin: 2rem 0;
+
 			}
 
 		}
